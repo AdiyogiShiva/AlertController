@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		55E7D4BCA53EC1B1C1B7AE17 /* Pods_AlertController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D172B777DE3EA4371D60EDA /* Pods_AlertController.framework */; };
+		E12919372227A76900210E6D /* SweetAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = E12919362227A76900210E6D /* SweetAlert.swift */; };
 		E1315134222405F500E42884 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1315133222405F500E42884 /* AppDelegate.swift */; };
 		E1315136222405F500E42884 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1315135222405F500E42884 /* ViewController.swift */; };
 		E1315139222405F500E42884 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1315137222405F500E42884 /* Main.storyboard */; };
@@ -15,6 +17,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0D172B777DE3EA4371D60EDA /* Pods_AlertController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AlertController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		117D5BD2BA6F343ACD5A243D /* Pods-AlertController.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlertController.release.xcconfig"; path = "Target Support Files/Pods-AlertController/Pods-AlertController.release.xcconfig"; sourceTree = "<group>"; };
+		4AB2543953EF74633170A9A4 /* Pods-AlertController.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlertController.debug.xcconfig"; path = "Target Support Files/Pods-AlertController/Pods-AlertController.debug.xcconfig"; sourceTree = "<group>"; };
+		E12919362227A76900210E6D /* SweetAlert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SweetAlert.swift; sourceTree = "<group>"; };
 		E1315130222405F500E42884 /* AlertController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AlertController.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1315133222405F500E42884 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E1315135222405F500E42884 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -29,17 +35,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				55E7D4BCA53EC1B1C1B7AE17 /* Pods_AlertController.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		03C60B597E77F3158FCA5EFB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0D172B777DE3EA4371D60EDA /* Pods_AlertController.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1727E5BD30906156E2EF3703 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4AB2543953EF74633170A9A4 /* Pods-AlertController.debug.xcconfig */,
+				117D5BD2BA6F343ACD5A243D /* Pods-AlertController.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		E1315127222405F500E42884 = {
 			isa = PBXGroup;
 			children = (
 				E1315132222405F500E42884 /* AlertController */,
 				E1315131222405F500E42884 /* Products */,
+				1727E5BD30906156E2EF3703 /* Pods */,
+				03C60B597E77F3158FCA5EFB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -55,6 +81,7 @@
 			isa = PBXGroup;
 			children = (
 				E1315133222405F500E42884 /* AppDelegate.swift */,
+				E12919362227A76900210E6D /* SweetAlert.swift */,
 				E1315135222405F500E42884 /* ViewController.swift */,
 				E1315137222405F500E42884 /* Main.storyboard */,
 				E131513A222405F700E42884 /* Assets.xcassets */,
@@ -71,9 +98,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E1315142222405F700E42884 /* Build configuration list for PBXNativeTarget "AlertController" */;
 			buildPhases = (
+				F25C79C934F96FF00647FCF7 /* [CP] Check Pods Manifest.lock */,
 				E131512C222405F500E42884 /* Sources */,
 				E131512D222405F500E42884 /* Frameworks */,
 				E131512E222405F500E42884 /* Resources */,
+				FD554F68A0A1C795DA6238BD /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -130,6 +159,73 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		F25C79C934F96FF00647FCF7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AlertController-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FD554F68A0A1C795DA6238BD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AlertController/Pods-AlertController-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/BRYSerialAnimationQueue/BRYSerialAnimationQueue.framework",
+				"${BUILT_PRODUCTS_DIR}/CountryPickerSwift/CountryPicker.framework",
+				"${BUILT_PRODUCTS_DIR}/GlitchLabel/GlitchLabel.framework",
+				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SCLAlertView/SCLAlertView.framework",
+				"${BUILT_PRODUCTS_DIR}/SSBouncyButton/SSBouncyButton.framework",
+				"${BUILT_PRODUCTS_DIR}/SkyFloatingLabelTextField/SkyFloatingLabelTextField.framework",
+				"${BUILT_PRODUCTS_DIR}/Toast-Swift/Toast_Swift.framework",
+				"${BUILT_PRODUCTS_DIR}/UIColor-Hex/UIColor_Hex.framework",
+				"${BUILT_PRODUCTS_DIR}/UIImage+BetterAdditions/UIImage_BetterAdditions.framework",
+				"${BUILT_PRODUCTS_DIR}/XLActionController/XLActionController.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BRYSerialAnimationQueue.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CountryPicker.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GlitchLabel.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SCLAlertView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SSBouncyButton.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SkyFloatingLabelTextField.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Toast_Swift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/UIColor_Hex.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/UIImage_BetterAdditions.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/XLActionController.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AlertController/Pods-AlertController-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		E131512C222405F500E42884 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -137,6 +233,7 @@
 			files = (
 				E1315136222405F500E42884 /* ViewController.swift in Sources */,
 				E1315134222405F500E42884 /* AppDelegate.swift in Sources */,
+				E12919372227A76900210E6D /* SweetAlert.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,6 +377,7 @@
 		};
 		E1315143222405F700E42884 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4AB2543953EF74633170A9A4 /* Pods-AlertController.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -297,6 +395,7 @@
 		};
 		E1315144222405F700E42884 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 117D5BD2BA6F343ACD5A243D /* Pods-AlertController.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
